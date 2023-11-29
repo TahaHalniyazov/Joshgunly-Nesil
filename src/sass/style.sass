@@ -1,0 +1,454 @@
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+html
+    scroll-behavior: smooth
+body
+    max-width: 1920px
+    
+    .my-container 
+        max-width: 100%
+        max-height: 100%
+        opacity: 0
+        transform: translateY(50px)
+        transition: transform 1s, opacity 0.5s
+        
+        
+header 
+    max-width: 100%
+    max-height: 900px
+    background: url("../../img/header-img/header-bg.jpeg") center center/cover no-repeat
+    padding: 20px
+    padding-bottom: 100px
+    .header_items
+        display: flex
+        justify-content: space-between        
+        .header-icon 
+            img                      
+                width: 100%
+                height: 60px 
+                margin-bottom: 16px                  
+        .menu            
+            color: white
+            font-family: Montserrat
+            font-size: 16px
+            font-style: normal
+            font-weight: 500
+            line-height: normal 
+            padding-top: 30px
+            li
+                display: flex
+                justify-content: space-between
+                ul
+                    padding-right: 25px         
+                    a
+                        color: white
+                        font-family: Montserrat
+                        text-decoration: none                
+                        &:hover
+                            cursor: pointer
+                            color: var(--Accent, #4985FF)  
+                            padding-bottom: 27px
+                            border-bottom: 1px solid white                    
+    .header_line
+        max-width: 1920px
+        height: 1px
+        opacity: 0.5
+        background: #A1A1A1
+        margin-bottom: 50px
+    .header_h3
+        margin: 0 auto
+        margin-bottom: 120px
+        max-width: 75%
+        text-align: center
+    h3
+        color: white
+        width: 100%
+        line-height: 34px
+        text-align: center
+        font-family: Montserrat
+        font-size: 22px
+        padding-bottom: 40px
+    h1  
+        
+        
+        color: white
+        width: 100%
+        height: 111px
+        text-align: center
+        font-family: Montserrat
+        font-size: 48px
+        font-style: normal
+        font-weight: 800
+        line-height: 134.09%
+        color: var(--Accent, #4985FF) 
+        margin-bottom: 34px
+    .hamburger
+        display: none   
+    .header_button   
+        display: block     
+        margin: 0px auto 
+        margin-top: 100px
+        margin-bottom: 100px       
+        width: 200px
+        height: 45px
+        border-radius: 30px
+        border: 2px var(--Accent, #4985FF) solid
+        background: var(--Accent, #4985FF)        
+        color: #FFF
+        text-align: center
+        font-family: Montserrat
+        font-size: 16px
+        font-style: normal
+        font-weight: 500
+        line-height: normal
+        transition: 0.25s all
+        &:hover
+            cursor: pointer
+            background: white
+            color: var(--Accent, #4985FF)   
+
+
+///////////////////////////////////////////////SERVICES
+.show
+    opacity: 1
+.hidden
+    opacity: 0
+.promo
+    margin: 0 auto
+    
+    .services
+        margin: 0 auto
+        margin-top: 100px
+        max-width: 1120px     
+        h2
+            color: var(--dark, #323232)
+            text-align: center
+            font-family: Montserrat
+            font-size: 36px
+            font-style: normal
+            font-weight: 700
+            line-height: 146.28%
+        &_subtext
+            width: 70%
+            margin: 0 auto
+            margin-top: 50px
+            color: var(--grey, #999)
+            text-align: center
+            font-family: Montserrat
+            font-size: 16px
+            font-style: normal
+            font-weight: 400
+            line-height: 158.47%
+            span
+                    font-weight: 800
+                    color: var(--Accent, #4985FF)              
+        .col
+            display: flex
+            max-width: 50%           
+            margin-top: 100px            
+            img              
+                position: relative  
+                top: -6px 
+                width: 60px
+                height: 60px 
+        &_item_text
+            padding-left: 20px
+            font-family: Montserrat
+            font-size: 18px
+            font-style: normal
+            font-weight: 600
+            line-height: normal
+            & p:last-child
+                padding-top: 10px
+                color: var(--grey, #999)            
+                font-family: Montserrat
+                font-size: 16px
+                font-style: normal
+                font-weight: 400
+                line-height: 158.47%
+        .service_button
+            display: block     
+            margin: 50px auto        
+            width: 200px
+            height: 45px
+            border-radius: 30px
+            border: 2px var(--Accent, #4985FF) solid
+            background: var(--Accent, #4985FF)        
+            color: #FFF
+            text-align: center
+            font-family: Montserrat
+            font-size: 16px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            transition: 0.25s all
+            &:hover
+                cursor: pointer
+                background: white
+                color: var(--Accent, #4985FF) 
+
+///////////////////////////////////////PROMO-2
+
+.promo_2
+    margin: 0 auto
+    margin-top: 50px
+    padding: 70px    
+    background: #F6F6F8         
+    .about_us
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 90%
+        &_text
+            h2
+                font-family: Montserrat
+                font-size: 36px
+                font-style: normal
+                font-weight: 700
+                line-height: 146.28%
+                
+            p
+                
+                padding-top: 20px
+                padding-bottom: 30px
+                max-width: 80%  
+                color: var(--grey, #999)
+                font-family: Montserrat
+                font-size: 16px
+                font-style: normal
+                font-weight: 400
+                line-height: 158.47%
+            a
+                
+                color: var(--Accent, #4985FF)
+                font-family: Montserrat
+                font-size: 16px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                text-decoration-line: underline               
+        &_img     
+            img       
+                width: 500px
+                height: 400px
+                border-radius: 10px
+.new_promo
+    margin: 0 auto
+    padding: 70px
+    .new_about_us
+        display: flex
+        justify-content: space-between       
+        margin: 0 auto       
+        align-items: center
+        max-width: 90%        
+        &_text
+            padding-left: 60px
+            h2
+                font-family: Montserrat
+                font-size: 36px
+                font-style: normal
+                font-weight: 700
+                line-height: 146.28%                
+            p
+                
+                padding-top: 20px
+                padding-bottom: 30px
+                max-width: 100%  
+                color: var(--grey, #999)
+                font-family: Montserrat
+                font-size: 16px
+                font-style: normal
+                font-weight: 400
+                line-height: 158.47%
+            a
+                
+                color: var(--Accent, #4985FF)
+                font-family: Montserrat
+                font-size: 16px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                text-decoration-line: underline                
+        &_img     
+            img       
+                width: 500px
+                height: 400px
+                border-radius: 10px
+.our_partners
+    background-color: #F6F6F8  
+    margin-top: 40px 
+    text-align: center 
+    padding: 70px     
+    h2
+        font-family: Montserrat
+        font-size: 36px
+        font-style: normal
+        font-weight: 700
+        text-align: center
+    .our_partners_img
+        .cisco_img
+            padding-bottom: 50px
+        .microinvest_img
+            padding-top: 12px        
+        img
+            margin-left: 20px
+            width: 310px
+            height: auto
+.promo_3 
+    margin: 0 auto        
+    .our_works
+        background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4  
+        padding: 100px 100px 300px 100px 
+        text-align: center  
+        h2
+            color: #FFF
+            font-family: Montserrat
+            font-size: 36px
+            font-style: normal
+            font-weight: 700
+            line-height: 146.28% 
+        &_button
+            display: block                  
+            width: 200px
+            height: 45px
+            border: 2px var(--Accent, #4985FF) solid
+            border-radius: 30px
+            background: var(--Accent, #4985FF)        
+            color: #FFF
+            text-align: center
+            font-family: Montserrat
+            font-size: 16px
+            font-style: normal
+            font-weight: 500
+            line-height: normal
+            transition: 0.25s all
+            &:hover
+                cursor: pointer
+                background: white
+                color: var(--Accent, #4985FF) 
+
+.promo_4
+    position: relative
+    top: -200px    
+    margin-left: 20px   
+    overflow: hidden
+    .swiper-container
+        overflow: hidden        
+    .promo_description_items        
+        display: flex
+        justify-content: space-between        
+        margin: 0 auto
+        text-align: left               
+        .description_item
+            margin-left: 8px
+            img
+                width: 350px
+                height: 240px        
+            h4
+                font-family: Montserrat
+                font-size: 18px
+                font-style: normal
+                font-weight: 600
+                line-height: normal
+                padding: 14px 0 4px 4px
+                text-align: left
+                span
+                    color: var(--Accent, #4985FF)
+                
+            p
+                color: var(--grey, #999)
+                font-family: Montserrat
+                font-size: 16px
+                font-style: normal
+                font-weight: 400
+                line-height: 158.47% 
+                max-width: 360px
+                padding: 8px 0 10px 4px
+                text-align: left                
+            a
+                text-align: left
+                color: var(--Accent, #4985FF)
+                font-family: Montserrat
+                font-size: 16px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                text-decoration-line: underline
+
+
+footer
+    background: #F6F6F8 
+    .footer_content
+        display: flex
+        justify-content: space-evenly
+        h4
+            font-family: Montserrat
+            font-size: 18px
+            font-style: normal
+            font-weight: 600
+            line-height: normal
+            padding: 30px 0        
+        .contacts_message, .contacts_phone, .contacts_adress
+            display: flex
+            padding: 20px auto
+            p
+                font-family: Montserrat
+                font-size: 14px
+                font-style: normal
+                font-weight: 400
+                line-height: 158.47%
+                color: var(--grey, #999)
+                padding: 12px 0 12px 10px
+                margin-bottom: 0
+    .main_menu
+        h4
+            padding-left: 36px
+        ul
+            list-style-type: none
+            li
+                
+                padding-top: 20px
+                a
+                    font-family: Montserrat
+                    font-size: 14px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 158.47%
+                    text-decoration: none 
+                    color: var(--grey, #999) 
+
+    .social_softs
+        h4
+            padding-left: 36px
+        
+        ul
+            list-style-type: none
+            li
+                display: flex
+                padding-top: 20px
+                
+                p
+                    font-family: Montserrat
+                    font-size: 14px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: 158.47%
+                    color: var(--grey, #999) 
+                    padding-left: 4px
+                    margin-bottom: 0
+                    &:hover
+                        cursor: pointer
+    .reserved
+        color: var(--grey, #999)
+        text-align: center
+        font-family: Montserrat
+        font-size: 13px
+        font-style: normal
+        font-weight: 400
+        line-height: 158.47%
+        padding: 100px 0 40px 0
+
+@import "media"                  
