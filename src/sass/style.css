@@ -707,8 +707,8 @@ footer .reserved {
   header .hamburger {
     display: block;
     position: fixed;
-    right: 40px;
-    top: 54px;
+    right: 30px;
+    top: 40px;
     transform: translateY(-50%);
     width: 26px;
   }
@@ -885,6 +885,7 @@ footer .reserved {
   .promo .services_subtext {
     font-size: 14px;
     margin-top: 14px;
+    max-width: 90%;
   }
   .promo_2 .about_us_text h2 {
     text-align: center;
@@ -919,11 +920,12 @@ footer .reserved {
     height: 210px;
   }
   .our_partners {
-    margin-top: 10px;
+    background: white;
     padding: 50px;
   }
   .our_partners h2 {
     font-size: 22px;
+    margin-bottom: 70px;
   }
   .our_partners .our_partners_img {
     display: flex;
@@ -950,6 +952,9 @@ footer .reserved {
   .promo_4 .promo_description_items .description_item img {
     width: 190px;
     height: 140px;
+  }
+  footer {
+    padding-left: 10px;
   }
   footer .main_menu h4 {
     padding-left: 0;
