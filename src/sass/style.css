@@ -272,20 +272,21 @@ header .header_button:hover {
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
-  max-width: 90%;
+  max-width: 100%;
+}
+.new_promo .new_about_us h2 {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 146.28%;
+  margin-left: 40px;
 }
 .new_promo .new_about_us_text {
   padding-left: 60px;
 }
-.new_promo .new_about_us_text h2 {
-  font-family: Montserrat;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 146.28%;
-}
 .new_promo .new_about_us_text p {
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: 30px;
   max-width: 100%;
   color: var(--grey, #999);
@@ -305,9 +306,10 @@ header .header_button:hover {
   text-decoration-line: underline;
 }
 .new_promo .new_about_us_img img {
-  width: 500px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
   border-radius: 10px;
+  margin-left: 50px;
 }
 
 .our_partners {
@@ -592,15 +594,15 @@ footer .reserved {
     padding: 10px;
     padding-top: 30px;
   }
-  .new_promo .new_about_us_text h2 {
+  .new_promo .new_about_us h2 {
     font-size: 24px;
   }
   .new_promo .new_about_us_text p {
     font-size: 15px;
   }
   .new_promo .new_about_us_img img {
-    width: 420px;
-    height: 300px;
+    width: 360px;
+    height: 280px;
   }
   .our_partners {
     margin-top: 28px;
@@ -759,15 +761,17 @@ footer .reserved {
   .new_promo .new_about_us {
     flex-direction: column;
   }
-  .new_promo .new_about_us_text h2 {
+  .new_promo .new_about_us h2 {
     font-size: 24px;
     margin-top: 20px;
+    text-align: center;
   }
   .new_promo .new_about_us_text p {
     font-size: 14px;
+    padding-top: 26px;
   }
   .new_promo .new_about_us_img img {
-    width: 360px;
+    width: 340px;
     height: 220px;
   }
   .our_partners {
@@ -868,16 +872,17 @@ footer .reserved {
     flex-direction: column;
     width: 100%;
   }
-  .new_promo .new_about_us_text h2 {
+  .new_promo .new_about_us h2 {
     font-size: 22px;
     margin-top: 20px;
   }
   .new_promo .new_about_us_text p {
     font-size: 14px;
+    padding-top: 20px;
   }
   .new_promo .new_about_us_img img {
-    width: 400px;
-    height: 240px;
+    width: 310px;
+    height: 210px;
   }
   .our_partners {
     margin-top: 10px;
