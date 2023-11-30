@@ -269,7 +269,7 @@ header .header_button:hover {
 }
 .new_promo .new_about_us {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0 auto;
   align-items: center;
   max-width: 100%;
@@ -280,7 +280,8 @@ header .header_button:hover {
   font-style: normal;
   font-weight: 700;
   line-height: 146.28%;
-  margin-left: 40px;
+  text-align: center;
+  width: 50%;
 }
 .new_promo .new_about_us_text {
   padding-left: 60px;
@@ -306,17 +307,15 @@ header .header_button:hover {
   text-decoration-line: underline;
 }
 .new_promo .new_about_us_img img {
-  width: 400px;
+  width: 420px;
   height: 300px;
   border-radius: 10px;
-  margin-left: 50px;
 }
 
 .our_partners {
   background-color: #F6F6F8;
-  margin-top: 40px;
-  text-align: center;
-  padding: 70px;
+  margin: 0 auto;
+  padding: 70px 70px 120px 70px;
 }
 .our_partners h2 {
   font-family: Montserrat;
@@ -324,15 +323,22 @@ header .header_button:hover {
   font-style: normal;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 100px;
+}
+.our_partners .our_partners_img {
+  text-align: center;
+  margin: 0 auto;
 }
 .our_partners .our_partners_img .cisco_img {
-  padding-bottom: 50px;
+  padding-bottom: 44px;
+  width: 200px;
+  height: 180px;
 }
 .our_partners .our_partners_img .microinvest_img {
-  padding-top: 12px;
+  padding-top: 14px;
 }
 .our_partners .our_partners_img img {
-  margin-left: 20px;
+  margin-left: 90px;
   width: 310px;
   height: auto;
 }
@@ -538,6 +544,11 @@ footer .reserved {
   .our_partners h2 {
     font-size: 32px;
   }
+  .our_partners .our_partners_img .cisco_img {
+    width: 185px;
+    height: auto;
+    padding-bottom: 26px;
+  }
   .our_partners .our_partners_img img {
     width: 260px;
   }
@@ -610,8 +621,17 @@ footer .reserved {
   .our_partners h2 {
     font-size: 28px;
   }
+  .our_partners .our_partners_img {
+    display: flex;
+    align-items: center;
+  }
   .our_partners .our_partners_img img {
     width: 220px;
+    height: 80px;
+  }
+  .our_partners .our_partners_img .cisco_img {
+    width: 154px;
+    height: auto;
   }
   .promo_3 .our_works h2 {
     font-size: 28px;
@@ -765,6 +785,7 @@ footer .reserved {
     font-size: 24px;
     margin-top: 20px;
     text-align: center;
+    width: 80%;
   }
   .new_promo .new_about_us_text p {
     font-size: 14px;
@@ -773,6 +794,7 @@ footer .reserved {
   .new_promo .new_about_us_img img {
     width: 340px;
     height: 220px;
+    margin-left: 0;
   }
   .our_partners {
     margin-top: 20px;
@@ -780,11 +802,21 @@ footer .reserved {
   .our_partners h2 {
     font-size: 24px;
   }
+  .our_partners .our_partners_img {
+    justify-content: space-between;
+  }
   .our_partners .our_partners_img img {
-    width: 170px;
+    width: 190px;
+    height: auto;
+    margin: 0;
   }
   .our_partners .our_partners_img .cisco_img {
-    padding-bottom: 42px;
+    width: 140px;
+    height: auto;
+    padding-bottom: 26px;
+  }
+  .our_partners .our_partners_img .microinvest_img {
+    padding-top: 12px;
   }
   .promo_3 .our_works {
     padding: 100px 100px 200px 100px;
@@ -875,6 +907,8 @@ footer .reserved {
   .new_promo .new_about_us h2 {
     font-size: 22px;
     margin-top: 20px;
+    width: 88%;
+    padding-left: 8px;
   }
   .new_promo .new_about_us_text p {
     font-size: 14px;
@@ -891,11 +925,20 @@ footer .reserved {
   .our_partners h2 {
     font-size: 22px;
   }
+  .our_partners .our_partners_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .our_partners .our_partners_img img {
-    width: 114px;
+    width: 184px;
+    height: auto;
+    padding-left: 20px;
   }
   .our_partners .our_partners_img .cisco_img {
-    padding-bottom: 28px;
+    width: 120px;
+    height: auto;
+    padding-bottom: 20px;
   }
   .promo_3 {
     display: none;
@@ -918,7 +961,6 @@ footer .reserved {
     font-size: 12px;
   }
   footer .footer_content h4 {
-    font-size: 14px;
     padding-bottom: 20px;
   }
   footer .footer_content .contacts_message p, footer .footer_content .contacts_phone p, footer .footer_content .contacts_adress p {
