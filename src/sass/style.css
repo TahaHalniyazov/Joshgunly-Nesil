@@ -870,6 +870,9 @@ footer .reserved {
   header {
     padding-bottom: 40px;
   }
+  header .header_items {
+    display: block;
+  }
   header .header_items .header-icon img {
     max-width: 90%;
     height: 40px;
