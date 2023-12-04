@@ -31,7 +31,7 @@ header .header_items {
   justify-content: space-between;
 }
 header .header_items .header-icon img {
-  width: 100%;
+  max-width: 100%;
   height: 60px;
   margin-bottom: 16px;
 }
@@ -85,8 +85,9 @@ header h3 {
   padding-bottom: 40px;
 }
 header h1 {
+  margin: 0 auto;
   color: white;
-  width: 100%;
+  width: 70%;
   height: 111px;
   text-align: center;
   font-family: Montserrat;
@@ -149,6 +150,8 @@ header .header_button:hover {
   font-style: normal;
   font-weight: 700;
   line-height: 146.28%;
+  max-width: 70%;
+  margin: 0 auto;
 }
 .promo .services_subtext {
   width: 70%;
@@ -519,6 +522,12 @@ footer .reserved {
 }
 
 @media (max-width: 1200px) {
+  header h1 {
+    width: 90%;
+  }
+  .promo .services h2 {
+    margin-bottom: 20px;
+  }
   .promo .services_subtext {
     max-width: 70%;
     margin: 0 auto;
@@ -561,8 +570,13 @@ footer .reserved {
   }
 }
 @media (max-width: 991px) {
+  header h3 {
+    padding-bottom: 30px;
+  }
   header h1 {
+    width: 70%;
     font-size: 36px;
+    margin-bottom: 20px;
   }
   header .header_h3 {
     max-width: 85%;
@@ -577,6 +591,7 @@ footer .reserved {
     margin-left: 12px;
   }
   .promo .services h2 {
+    max-width: 80%;
     font-size: 32px;
   }
   .promo .services_subtext {
@@ -663,8 +678,9 @@ footer .reserved {
 }
 @media (max-width: 767px) {
   header h1 {
+    width: 80%;
     font-size: 30px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   header h3 {
     font-size: 19px;
@@ -854,13 +870,14 @@ footer .reserved {
   header {
     padding-bottom: 40px;
   }
-  header .header_items .header_icon img {
-    width: 40%;
-    height: 10px;
+  header .header_items .header-icon img {
+    max-width: 90%;
+    height: 40px;
   }
   header h1 {
+    width: 90%;
     font-size: 24px;
-    height: 80px;
+    height: auto;
   }
   header h3 {
     font-size: 16px;
@@ -868,6 +885,10 @@ footer .reserved {
   }
   header .header_h3 {
     max-width: 100%;
+  }
+  header .hamburger {
+    right: 30px;
+    top: 30px;
   }
   .promo .services {
     margin-top: 28px;
@@ -879,6 +900,7 @@ footer .reserved {
     text-align: center;
   }
   .promo .services h2 {
+    max-width: 95%;
     font-size: 22px;
     margin: 0 auto;
   }
@@ -985,5 +1007,27 @@ footer .reserved {
   }
   footer .reserved {
     padding: 70px 40px 16px 40px;
+  }
+}
+@media (max-width: 370px) {
+  header .header_items .header-icon img {
+    max-width: 80%;
+    height: 36px;
+  }
+  header h3 {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  header h1 {
+    font-size: 20px;
+    width: 100%;
+  }
+  header .hamburger {
+    right: 6px;
+    width: 20px;
+  }
+  .promo .services h2 {
+    max-width: 100%;
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
