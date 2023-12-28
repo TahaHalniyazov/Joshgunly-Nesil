@@ -72,3 +72,50 @@ const swiper = new Swiper('.swiper-container', {
     },
 });
 
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  let toggleButton = document.querySelector('.service_button');
+  let toggleBlocks = document.querySelectorAll('.microinvest_item');
+
+  toggleButton.addEventListener('click', function() {
+    toggleBlocks.forEach(function(block) {
+      block.classList.toggle('active');
+    });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  let toggleButton2 = document.querySelector('.audit_button');
+  let toggleBlock2 = document.querySelector('.audit_block');
+
+  toggleButton2.addEventListener('click', function() {
+    toggleBlock2.classList.toggle('active');
+  });
+});
+
+
+
+ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            // Координаты центра карты.
+            // Порядок по умолчанию: «широта, долгота».
+            // Чтобы не определять координаты центра карты вручную,
+            // воспользуйтесь инструментом Определение координат.
+            center: [37.90747155670431, 58.33792974972362],
+            // Уровень масштабирования. Допустимые значения:
+            // от 0 (весь мир) до 19.
+            zoom: 18,
+            controls: []
+        });
+        myMap.setCenter([37.90747155670431, 58.33792974972362], 17);
+        
+        var myPlacemark = new ymaps.Placemark([37.90747022851372,58.33802697980042]);
+        myMap.geoObjects.add(myPlacemark);
+        myMap.controls.add('zoomControl');
+    }
+
+
+

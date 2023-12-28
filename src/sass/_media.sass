@@ -1,7 +1,7 @@
 @media (max-width: 1200px)
     header
         h1
-            width: 90%
+            width: 75%
     .promo
         .services
             h2
@@ -19,6 +19,11 @@
         padding: 20px
         .new_about_us
             width: 100%
+            h2
+                font-size: 30px
+                padding-left: 30px
+                width: 70%
+                margin-right: 0
         .new_about_us_text
             h2
                 font-size: 30px
@@ -43,14 +48,16 @@
                 margin-left: 4px
     
 @media (max-width: 991px)
-
     header
         h3
             padding-bottom: 30px
-        h1
-            width: 70%
-            font-size: 36px
-            margin-bottom: 20px
+        .header_bg_img
+            h1
+                width: 90%
+                font-size: 36px
+            
+                margin: 0 auto
+                
         .header_h3
             max-width: 85%
         .header_items
@@ -64,35 +71,59 @@
         margin-left: 12px
         .services
             h2
-                max-width: 80%
+                max-width: 90%
                 font-size: 32px
             &_subtext
                 font-size: 15px
-                max-width: 70%
+                max-width: 90%
                 margin: 0 auto
             &_item_text
                 font_size: 17px
                 & p:last-child
                         font-size: 15px
     .promo_2
-        .about_us_text
-            h2
-                font-size: 28px
-            p
-                font-size: 15px
-                max-width: 90%
-        .about_us_img
-            img
-                width: 420px
-                height: 300px
+        .about_us
+            .about_us_text
+                padding: 0 30px
+                .audit_button
+                    margin-left: 20px
+                h2
+                    font-size: 26px
+                p
+                    font-size: 15px
+                    max-width: 90%
+            .audit_block
+                img
+                    width: 400px
+                    height: 300px
+                p
+                    max-width: 100%
     .new_promo
             padding: 10px
-            padding-top: 30px
+            padding-top: 10px
             .new_about_us
                 h2
-                    font-size: 24px
+                    font-size: 26px
+                    padding-left: 16px
+                    width: 70%
+                    margin-right: 0
+                .microinvest_item
+                    p
+                        font-size: 15px
+                        padding-left: 10px
+                .microinvest_item_img_res
+                    width: 400px
+                    margin-left: 10px
+                .microinvest_item_img_reception
+                    width: 400px
+                .microinvest_item_main
+                    .service_button
+                        margin: 26px auto
+                        margin-left: 36px
+                        margin-top: 38px
             
             .new_about_us_text
+                padding: 10px
              
                 p
                     font-size: 15px
@@ -124,9 +155,8 @@
                 height: 43px
     
     .promo_4
-        top: -170px
-        left: 0
-        
+        h2
+            max-width: 80%       
         .promo_description_items
             .description_item
                 text-align: left
@@ -141,24 +171,26 @@
                 img
                     width: 280px
                     height: 180px
-
+    footer
+        .footer_content
+            .contacts
+                margin-left: 10px   
+        .social_softs
+            ul
+                li
+                    padding-top: 0
 @media (max-width: 767px)
     header
-        h1
-            width: 80%
-            font-size: 30px  
-            margin-bottom: 10px
-        h3
-            font-size: 19px 
-            padding-bottom: 20px
-        .header_h3
-            margin-bottom: 80px  
-            max-width: 95%           
+        .header_bg_img
+            h1
+                width: 100%
+                font-size: 30px  
+                margin-left: 30px
         .header_items
             .header-icon
                 img
-                    width: 90%
-                    height: 50px 
+                    width: 60%
+                    height: auto 
             .menu
                 position: fixed                
                 top: 0
@@ -184,10 +216,10 @@
         .hamburger
             display: block
             position: fixed
-            right: 30px
-            top: 40px
+            right: 50px
+            top: 52px
             transform: translateY(-50%)
-            width: 26px
+            width: 30px
             
             span
                 display: block
@@ -220,46 +252,83 @@
                 p:last-child
                     padding-top: 4px
     .promo_2
-        padding: 30px
+        padding: 4px
         margin-top: 30px
         .row
             padding-left:0   
         .about_us
-            flex-direction: column-reverse
-        .about_us_text
-            h2
-                font-size: 24px
+           
+            .audit_block
+                flex-direction: column
                 text-align: center
-                margin-top: 30px
-            p
-                max-width: 100%
-                font-size: 14px
-                padding-bottom: 20px
-        .about_us_img
-            text-align: center
+                
+                img
+                    width: 400px
+                    height: auto
+                    order: -1
+                    margin-bottom: 20px
+                    margin-left: 0
+                    
+                 
+                p
+                    font-size: 15px
+                    text-align: left
+                    
+            .about_us_text
+                padding: 10px
+                h2
+                    font-size: 20px
+                    text-align: left
+                    margin-top: 30px
+                .audit_button
+                    font-size: 14px   
+           
+        
+            
             img
                 width:360px
                 height: 220px
                 margin-left: 20px
     .new_promo
         padding: 10px
-        padding-top: 30px
+        padding-top: 0  
         .new_about_us
-            flex-direction: column
+        
+            &:last-child
+                margin-bottom: 10px
+                img
+                    order: -1
+
+            .microinvest_item
+                flex-direction: column
+                p
+                    padding: 0
+                    max-width: 100%
+                
+            .microinvest_item_img_res, .microinvest_item_img_reception
+                margin: 0 auto
+                margin-bottom: 20px
+            .microinvest_item_main
+                align-items: center
+                .service_button
+                    font-size: 14px
+                    margin-top: 10px
+                    
             h2
-                font-size: 24px
-                margin-top: 20px
-                text-align: center
+                font-size: 20px
+                margin-top: 0
+                padding: 0
+                padding-left: 4px
+                margin-right: 30px
+                text-align: left
                 width: 80%
-        .new_about_us_text            
+        .new_about_us_text 
+            padding: 0           
             p
-                font-size: 14px
-                padding-top: 26px
-        .new_about_us_img
-            img
-                width: 340px
-                height: 220px
-                margin-left: 0
+                font-size: 15px
+                padding-top: 6px
+                padding-left: 4px
+
     .our_partners
         margin-top: 20px
         h2
@@ -286,8 +355,11 @@
             h2
                 font-size: 24px   
     .promo_4
-        top: -140px
-        margin-left: 6px
+        h2
+            font-size: 24px
+            max-width: 100%
+        
+        
         .promo_description_items
             
             .description_item
@@ -303,6 +375,21 @@
             h4
                 padding-left: 4px
         .footer_content
+            margin-top: 100px
+            flex-wrap: wrap
+            gap: 20px
+            .contacts
+                order: 1
+                
+            .social_softs
+                order: 2
+                ul
+                    li
+                        padding-top: 10px
+                
+            #map 
+                order: 3
+                width: 100% 
             h4
                 font-size: 16px
                 padding-left: 4px 
@@ -312,26 +399,27 @@
 
 @media (max-width: 575px) 
     header
-        padding-bottom: 40px
-        .header_items
-            display: block
+        .header_bg_img
+            h1
+                font-size: 26px
+                margin-left: 20px
+                width: 95%
+        .header_items            
             .header-icon
+                text-align: left
                 img
-                    max-width: 90%
-                    height: 40px                     
+                    width: 100%
+                    height: 60px                     
         h1
             width: 90%
             font-size: 24px
             height: auto
-        h3
-            font-size: 16px 
-            padding-bottom: 14px
             
-        .header_h3
-            max-width: 100%     
+            
         .hamburger        
             right: 30px
-            top: 30px
+            top: 60px
+            
                     
 
     .promo
@@ -356,36 +444,52 @@
                 width: 100%
                 max-width: 100%           
     .promo_2
-        .about_us
-            
-            
-            &_text
+        .about_us      
+            margin-top: 10px  
+            .audit_block
+                padding-bottom: 0    
+                p
+                    padding: 0
+            .about_us_text
+                flex-direction: column
+                text-align: center
                 h2
-                    text-align: center 
+                    margin: 0 auto
+                    font-size: 18px
+                    margin-top: 0
+                    max-width: 90%
+                .audit_button
+                    margin: 0 auto
+                    margin-top: 20px
+                    
                     
             &_img
-                text-align: center
-                img
-                    width: 400px
-                    height: 240px 
+                text-align: center 
     .new_promo
         padding: 10px
-        padding-top: 30px
+        
         .new_about_us
-            flex-direction: column
-            width: 100%
-            h2
-                font-size: 22px
-                margin-top: 20px
-                width: 88%
-                padding-left: 8px
+            margin-top: 10px
+            
+            .microinvest_item_main
+                flex-direction: column 
+                text-align: center           
+                width: 100%
+                h2
+                    font-size: 18px                    
+                    width: 90%
+                    margin: 0 auto
+                .service_button
+                    margin: 20px auto
+                    
+                    
         .new_about_us_text
             padding-left: 20px
             margin: 0 auto        
             p
                 font-size: 14px
                 padding-top: 20px
-                
+                display: none
         .new_about_us_img
             img
                 width: 310px
@@ -432,6 +536,7 @@
                     a
                         font-size: 12px
         .footer_content
+            margin-top: 0
             h4
                 
                 padding-bottom: 20px
@@ -456,20 +561,53 @@
         .header_items
             .header-icon
                 img
-                    max-width: 80%
-                    height: 36px
-        h3
-            font-size: 14px
-            line-height: 30px
-        h1
-            font-size: 20px
-            width: 100%
+                    max-width: 70%
+                    height: auto
+        .header_bg_img        
+            h1
+                font-size: 20px
+                width: 100%
+                margin-left: 6px
+                padding: 80px 0 200px 0
         .hamburger
-            right: 6px
-            width: 20px
+            top: 50px
+            right: 20px
+            width: 30px
     .promo
         .services
             h2
                 max-width: 100%
                 font-size: 20px
-           
+    .promo_2
+        .about_us
+            .about_us_text
+                padding: 0
+                h2
+                    max-width: 100%
+                    margin: 0
+                    text-align: center                   
+            .audit_block
+                padding: 4px
+                p
+                    font-size: 14px
+                img
+                    width: 340px
+    .new_promo
+        .new_about_us
+            .microinvest_item_main
+                h2
+                    width: 100%
+                    margin: 0
+                    padding: 0
+                    text-align: center
+             
+            .microinvest_item_img_res
+                width: 340px  
+            .microinvest_item
+                margin-bottom: 20px
+                p
+                    font-size: 14px
+            .microinvest_item_img_reception
+                width: 340px
+
+                    

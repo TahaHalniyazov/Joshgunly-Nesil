@@ -7,7 +7,13 @@ html
 body
     max-width: 1920px
     
+
+    
+
+        
     .my-container 
+        background-color: white
+        margin: 0 auto
         max-width: 100%
         max-height: 100%
         opacity: 0
@@ -16,19 +22,34 @@ body
         
         
 header 
-    max-width: 100%
-    max-height: 900px
-    background: url("../../img/header-img/header-bg.jpeg") center center/cover no-repeat
-    padding: 20px
-    padding-bottom: 100px
+    max-width: 100%    
+      
+    
     .header_items
         display: flex
-        justify-content: space-between        
+        justify-content: space-between
+        padding: 25px 30px 0 30px
+        align-items: center
+             
         .header-icon 
             img                      
-                max-width: 100%
-                height: 60px 
-                margin-bottom: 16px                  
+                width: 180px
+                height: auto
+                margin-bottom: 20px
+                border-radius: 10px
+            .header_tel
+                color: white
+                font-family: Montserrat
+                font-size: 12px
+                font-style: normal
+                font-weight: 500
+                img
+                    width: 16px
+                    height: auto
+                    margin-right: 12px
+                    margin-top: 14px
+                    
+                
         .menu            
             color: white
             font-family: Montserrat
@@ -36,7 +57,8 @@ header
             font-style: normal
             font-weight: 500
             line-height: normal 
-            padding-top: 30px
+            padding-top: 14px
+           
             li
                 display: flex
                 justify-content: space-between
@@ -45,68 +67,45 @@ header
                     a
                         color: white
                         font-family: Montserrat
-                        text-decoration: none                
+                        text-decoration: none  
+                        transition: 0.25s all              
                         &:hover
                             cursor: pointer
-                            color: var(--Accent, #4985FF)  
-                            padding-bottom: 27px
-                            border-bottom: 1px solid white                    
+                            color: #30AF44  
+                                             
     .header_line
-        max-width: 1920px
+        max-width: 90%
         height: 1px
         opacity: 0.5
         background: #A1A1A1
-        margin-bottom: 50px
-    .header_h3
         margin: 0 auto
-        margin-bottom: 120px
-        max-width: 75%
-        text-align: center
-    h3
-        color: white
-        width: 100%
-        line-height: 34px
-        text-align: center
-        font-family: Montserrat
-        font-size: 22px
-        padding-bottom: 40px
-    h1    
-        margin: 0 auto   
-        color: white
-        width: 70%        
-        height: 111px
-        text-align: center
-        font-family: Montserrat
-        font-size: 48px
-        font-style: normal
-        font-weight: 800
-        line-height: 134.09%
-        color: var(--Accent, #4985FF) 
-        margin-bottom: 34px
+        
+    .header_bg_img
+        background: url("../../img/header-img/galaxy.jpg") center center/cover no-repeat
+        
+  
+        
+            
+        
+        h1    
+            margin-left: 50px   
+            color: white
+            width: 65%             
+            text-align: left
+            font-family: Montserrat
+            font-size: 40px
+            font-style: normal
+            font-weight: 800
+            line-height: 134.09%
+            padding: 100px 0 300px 0 
+            span
+                color: #30AF44 
+            
+            
+            
     .hamburger
         display: none   
-    .header_button   
-        display: block     
-        margin: 0px auto 
-        margin-top: 100px
-        margin-bottom: 100px       
-        width: 200px
-        height: 45px
-        border-radius: 30px
-        border: 2px var(--Accent, #4985FF) solid
-        background: var(--Accent, #4985FF)        
-        color: #FFF
-        text-align: center
-        font-family: Montserrat
-        font-size: 16px
-        font-style: normal
-        font-weight: 500
-        line-height: normal
-        transition: 0.25s all
-        &:hover
-            cursor: pointer
-            background: white
-            color: var(--Accent, #4985FF)   
+    
 
 
 ///////////////////////////////////////////////SERVICES
@@ -144,7 +143,10 @@ header
             line-height: 158.47%
             span
                     font-weight: 800
-                    color: var(--Accent, #4985FF)              
+                    color: #30AF44 
+            .row
+                margin-top: 0
+
         .col
             display: flex
             max-width: 50%           
@@ -193,72 +195,156 @@ header
 ///////////////////////////////////////PROMO-2
 
 .promo_2
-    margin: 0 auto
-    margin-top: 50px
-    padding: 70px    
-    background: #F6F6F8         
+    margin: 0 auto             
     .about_us
         margin: 0 auto
-        display: flex
-        justify-content: space-between
+        margin-top: 50px        
         align-items: center
-        max-width: 90%
+        max-width: 100%        
         &_text
+            display: flex
+            justify-content: space-around
+            padding: 0 50px
             h2
                 font-family: Montserrat
-                font-size: 36px
+                font-size: 30px
                 font-style: normal
                 font-weight: 700
                 line-height: 146.28%
+                max-width: 73%
                 
-            p
+            .audit_button
+                display: block     
+                margin: 50px auto        
+                width: 200px
+                height: 45px
+                border-radius: 30px
+                border: 2px #30AF44 solid
+                background: #30AF44
+                color: #FFF
+                text-align: center
+                font-family: Montserrat
+                font-size: 16px
+                font-style: normal
+                font-weight: 500
+                line-height: normal
+                transition: 0.25s all
+                &:hover
+                    cursor: pointer
+                    background: white
+                    color: #30AF44
+                    border: 2px solid
                 
-                padding-top: 20px
-                padding-bottom: 30px
-                max-width: 80%  
+            
+                       
+        .audit_block   
+            display: flex
+            justify-content: space-around  
+            align-items: center
+            padding: 30px
+            opacity: 0
+            max-height: 0
+            overflow: hidden
+            transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out
+            img       
+                width: 460px
+                height: 300px
+                border-radius: 10px
+            p               
+                max-width: 70%  
                 color: var(--grey, #999)
                 font-family: Montserrat
                 font-size: 16px
                 font-style: normal
                 font-weight: 400
                 line-height: 158.47%
-            a
+                padding: 0 20px
+        .audit_block.active 
                 
-                color: var(--Accent, #4985FF)
+                opacity: 1
+                max-height: 1000px
+.new_promo
+    margin: 0 auto    
+    .new_about_us       
+        margin: 0 auto       
+        align-items: center
+        max-width: 100% 
+        margin-top: 60px
+        .microinvest_item_main
+            display: flex
+            justify-content: space-between       
+            .service_button
+                display: block     
+                margin: 50px auto
+                width: 200px
+                height: 45px
+                border-radius: 30px
+                border: 2px #30AF44 solid
+                background: #30AF44
+                color: #FFF
+                text-align: center
                 font-family: Montserrat
                 font-size: 16px
                 font-style: normal
                 font-weight: 500
                 line-height: normal
-                text-decoration-line: underline               
-        &_img     
-            img       
-                width: 500px
-                height: 400px
-                border-radius: 10px
-.new_promo
-    margin: 0 auto
-    padding: 70px
-    .new_about_us
-        display: flex
-        justify-content: space-around       
-        margin: 0 auto       
-        align-items: center
-        max-width: 100% 
+                transition: 0.25s all
+                
+                
+                &:hover
+                    cursor: pointer
+                    background: white
+                    color: #30AF44
+                    border: 2px solid
+        .microinvest_item
+            display: flex
+            justify-content: space-around
+            align-items: center
+            margin-bottom: 50px
+            transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out
+            opacity: 0
+            max-height: 0
+            overflow: hidden       
+
+            &_img_res
+                width: 440px
+                height: auto
+                margin-left: 30px
+            &_img_reception
+                width: 440px
+                height: auto
+                margin-right: 20px
+            p
+                padding-left: 30px
+                padding-right: 10px
+                max-width: 100%  
+                color: var(--grey, #999)
+                font-family: Montserrat
+                font-size: 16px
+                font-style: normal
+                font-weight: 400
+                line-height: 158.47%
+                max-width: 90%
+        .microinvest_item.active 
+                
+                opacity: 1
+                max-height: 1000px
+                
         h2
                 font-family: Montserrat
                 font-size: 32px
                 font-style: normal
                 font-weight: 700
                 line-height: 146.28% 
-                text-align: center
-                width: 50%        
+                text-align: left
+                width: 60%   
+                padding-top: 16px 
+                padding-left: 50px
+                margin-right: 90px    
         &_text
-            padding-left: 60px
-                       
-            p
-                
-                padding-top: 50px
+            padding-left: 30px                       
+            p                
+                padding-top: 10px
                 padding-bottom: 30px
                 max-width: 100%  
                 color: var(--grey, #999)
@@ -267,31 +353,22 @@ header
                 font-style: normal
                 font-weight: 400
                 line-height: 158.47%
-            a
-                
-                color: var(--Accent, #4985FF)
-                font-family: Montserrat
-                font-size: 16px
-                font-style: normal
-                font-weight: 500
-                line-height: normal
-                text-decoration-line: underline                
         &_img     
             img       
                 width: 420px
                 height: 300px
                 border-radius: 10px
                 
-.our_partners
-    background-color: #F6F6F8 
+.our_partners    
     margin: 0 auto 
-    padding: 70px 70px 120px 70px   
+       
     h2
         font-family: Montserrat
         font-size: 36px
         font-style: normal
         font-weight: 700
         text-align: center
+        padding-top: 80px
         margin-bottom: 100px
     .our_partners_img
         
@@ -307,11 +384,11 @@ header
             margin-left: 90px
             width: 310px
             height: auto
-.promo_3 
+// .promo_3 
     margin: 0 auto        
     .our_works
         background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4  
-        padding: 100px 100px 300px 100px 
+        padding: 100px 
         text-align: center  
         h2
             color: #FFF
@@ -341,10 +418,28 @@ header
                 color: var(--Accent, #4985FF) 
 
 .promo_4
-    position: relative
-    top: -200px    
-    margin-left: 20px   
-    overflow: hidden
+    .line
+        width: 90%
+        height: 2px
+        background: #30AF44
+        margin: 0 auto
+        margin-bottom: 50px
+    h2
+        color: black
+        text-align: center
+        font-family: Montserrat
+        font-size: 32px
+        font-style: normal
+        font-weight: 700
+        line-height: 146.28% 
+        padding: 20px 0 20px 0
+        max-width: 55%
+        margin: 0 auto
+       
+      
+    
+            
+    
     .swiper-container
         overflow: hidden        
     .promo_description_items        
@@ -366,7 +461,7 @@ header
                 padding: 14px 0 4px 4px
                 text-align: left
                 span
-                    color: var(--Accent, #4985FF)
+                    color: #30AF44  
                 
             p
                 color: var(--grey, #999)
@@ -390,10 +485,11 @@ header
 
 
 footer
-    background: #F6F6F8 
+    
     .footer_content
         display: flex
         justify-content: space-evenly
+        margin-top: 140px
         h4
             font-family: Montserrat
             font-size: 18px
@@ -438,7 +534,7 @@ footer
             list-style-type: none
             li
                 display: flex
-                padding-top: 20px
+                padding-top: 12px
                 
                 p
                     font-family: Montserrat

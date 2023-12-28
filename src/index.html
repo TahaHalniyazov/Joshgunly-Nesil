@@ -11,67 +11,74 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     
   </head>
   <body>
+    
     <header>
-      <div class="my-container">
-            <div  class="header_items">
-              <div class="header-icon"><img src="../img/header-img/in_white_text.png" alt="Joshgunly Nesil Logo"></div>
-              <div class="menu">
-                <li>
-                  <ul class="menu_item"><a name= "main" href="">Главная</a></ul>
-                  <ul class="menu_item"><a href="#services">Услуги</a></ul>
-                  <!-- <ul class="navbar_item"><a href="#aboutUs">О нас</a></ul> -->
-                  <ul class="menu_item"><a href="#contacts">Контакты</a></ul>
-                </li>
-              </div>
-            </div>
+      <div class="my-container">            
+            
             <div class="hamburger">
               <span></span>
               <span></span>
               <span></span>
             </div>
-            <div class="header_line"></div>   
-            <h3>Добро пожаловать на веб-сайт компании "Джошгунлы Несил"!</h3>        
-            <h1>Мы создаем легкие решения сложных задач и проблем</h1>
-            <h3 class="header_h3">Наша компания специализируется на предоставлении широкого спектра  услуг в области информационных технологий и закупок оборудования и техники</h3>
+              
+            <div class="header_bg_img">
+              <div  class="header_items">
+                <div class="header-icon">
+                  
+                  <img src="../img/header-img/logo.svg" alt="Joshgunly Nesil Logo">
+                </div>
+                <div class="menu">
+                  <li>
+                    <ul class="menu_item"><a name= "main" href="">Главная</a></ul>
+                    <ul class="menu_item"><a href="#services">Услуги</a></ul>
+                    <!-- <ul class="navbar_item"><a href="#aboutUs">О нас</a></ul> -->
+                    <ul class="menu_item"><a href="#contacts">Контакты</a></ul>
+                  </li>
+                </div>               
+              </div>
+              <div class="header_line"></div> 
+              <h1>Современные IT-решения, профессиональный консалтинг и оптимальные закупки - <span>вот основа нашего подхода</span></h1>
+            </div>
             <!-- <button class="header_button">Наши проекты</button> -->
       </div>
     </header>
     <section class="promo">
       <div class="my-container row">
         <div class="services">
-          <h2 class="services_text"><a name="aboutUs"></a>Если вы ищете надежного партнера в сфере IT и закупок оборудования и техники, обращайтесь к нам</h2>
-          <div class="services_subtext"><a name="services"></a>Компания "Joshgunly nesil" предлагает профессиональные IT-услуги, которые помогут вам оптимизировать и улучшить работу вашего бизнеса<span><br>Наши услуги:</span></div>
+          <h2 class="services_text"><a name="aboutUs"></a>Если вы ищете надежного партнера в сфере IT, закупок оборудования и техники, обращайтесь к нам</h2>
+          <div class="services_subtext"><a name="services"></a>Компания "Joshgunly nesil" предлагает профессиональные IT-услуги, которые помогут вам оптимизировать работу вашего бизнеса<span><br>Наши услуги:</span></div>
             <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1">
               <div class="col">
-                <img src="..//img/icons/free-animated-icon-relation-7211821.gif" alt="" class="services_icon">
+                <img src="..//img/icons-2/line-2.png" alt="" class="services_icon">
                 <div class="services_item_text"><p>Монтаж и прокладка волоконно-оптических линий связи</p>
                   <p>Представляем услуги по проектированию и монтажу ВОЛС для обеспечения высокоскоростного
                     Интернета. Прокладка и монтаж кабелей на строительных объектах</p></div>
               </div>
               <div class="col">
-                <img src="..//img/icons/free-animated-icon-camera-7920851.png" alt="" class="services_icon">
+                <img src="..//img/icons-2/camera.png" alt="" class="services_icon">
                 <div class="services_item_text"><p>Установка и монтаж видеокамер врутреннего и наружного наблюдения</p>
                   <p>Производим установку видеокамер, создаем проекты разных технологических и бюджетных решений для объектов любой
                     сложности</p></div>
               </div>
               <div class="col">
-                <img src="..//img/icons/free-animated-icon-server-9872473.png" alt="" class="services_icon">
+                <img src="..//img/icons-2/server.png" alt="" class="services_icon">
                 <div class="services_item_text"><p>Серверная и сетевая инфраструктура</p>
                   <p>Выстраиваем серверную инфраструктуру и точки доступа Wi-Fi помогающую в надежном хранение данных при большом документообороте
                     заказчика</p></div>
               </div>
               <div class="col">
-                <img src="..//img/icons/free-animated-icon-box-12707647.gif" alt="" class="services_icon">
+                <img src="..//img/icons-2/zakup.png" alt="" class="services_icon">
                 <div class="services_item_text"><p>Закупочная деятельность</p>
                   <p>Мы производим закупочную деятельность. Имеем надежную базу контрагентов с разнообразным ассортиментом товаров. Наши
                     специалисты подберут товар согласно Вашим требованиям в соотношении цена - качество</p>
                 </div>
               </div>            
               <div class="col">
-                <img src="..//img/icons/free-animated-icon-chat-bot-10971777.gif" alt="" class="services_icon">
+                <img src="..//img/icons-2/robot.png" alt="" class="services_icon">
                 <div class="services_item_text"><p>Сайты, приложения и боты</p>
                   <p>Разработаем WEB-страницы для Вашего бизнеса с уникальным дизайном, предоставляем техническое сопровождение.
                     Полноценная команда разработчиков (Front-end, Back-end, WEB-designer, Full stack) Разработка мобильных приложений
@@ -79,7 +86,7 @@
                 </div>
               </div>
               <div class="col">
-                <img src="..//img/icons/free-animated-icon-computer-6172527.png" alt="" class="services_icon">
+                <img src="..//img/icons-2/org.png" alt="" class="services_icon">
                 <div class="services_item_text"><p>Продажа различной оргтехники</p>
                   <p>Мы предлагаем различную оргтехнику по выгодным ценам от ведущих производителей: Моноблоки, мониторы, Wi-Fi роутеры, принтеры и копировальные машины, шредеры, ноутбуки</p>
                 </div>
@@ -93,48 +100,60 @@
       <div class="my-container row">
         <div class="about_us">
           <div class="about_us_text">
-            <h2>IT-Аудит</h2>
-            <p>Мы рады предложить вам нашу услугу IT-аудита, которая поможет вам оценить и оптимизировать вашу информационную технологическую инфраструктуру. IT-аудит - это процесс анализа и оценки всех аспектов вашей IT-системы, включая аппаратное и программное обеспечение, сетевую инфраструктуру, безопасность данных и процессы управления. Наша команда экспертов проведет всестороннюю оценку вашей IT-инфраструктуры, начиная с анализа текущего состояния и выявления потенциальных проблем и слабых мест. Мы проведем проверку соответствия вашей системы современным стандартам и лучшим практикам в отрасли. Обратитесь к нам сегодня, чтобы узнать больше о нашей услуге IT-аудита и начать процесс оценки вашей IT-системы. Мы готовы помочь вам достичь максимальной эффективности и успеха в вашем бизнесе </p>
+            <h2>Мы рады предложить вам нашу услугу IT-аудита, которая поможет вам оптимизировать вашу технологическую инфраструктуру.</h2>
+            <button class="audit_button">Подробнее</button>
+          </div>
+            <div class="audit_block">              
+              <p> IT-аудит - это процесс анализа и оценки всех аспектов вашей IT-системы, включая аппаратное и программное обеспечение, сетевую инфраструктуру, безопасность данных и процессы управления. Наша команда экспертов проведет всестороннюю оценку вашей IT-инфраструктуры, начиная с анализа текущего состояния и выявления потенциальных проблем и слабых мест. Обратитесь к нам сегодня, чтобы узнать больше о нашей услуге IT-аудита и начать процесс оценки вашей IT-системы. Мы готовы помочь вам достичь максимальной эффективности и успеха в вашем бизнесе </p>
+              <img src="..//img/section-img/section-2.jpg" alt="">
+            </div>
             <!-- <a>Подробнее о компании</a> -->
           </div>
-          <div class="about_us_img"><img src="..//img/section-img/section-2.jpg" alt=""></div>
-        </div>
+          
+        
       </div>
     </section>
     <section class="new_promo">
       <div class="my-container row">
-        <div class="new_about_us">
-          <div class="new_about_us_img"><img src="..//img/promo-img/microinvest.png" alt=""></div>
-          <h2>Автоматизация торговли и отельного бизнеса. Microinvest Warehouse Pro</h2>
-          
-            <!-- <a>Подробнее о компании</a> -->
+          <div class="new_about_us">
+            <div class="microinvest_item_main">
+              <h2>Автоматизация торговли и гостиничного бизнеса. Microinvest Warehouse Pro</h2>
+              <button class="service_button">Подробнее</button>  
+            </div>
+          <div class="new_about_us_text">            
+              <p>Microinvest Warehouse Pro — это программное обеспечение для управления складом. Cлужит для автоматизации управления бизнес-процессами в торговом предприятии (магазине, ресторане, складе и т.д) и в сети объектов.  Microinvest может предоставлять различные продукты и услуги.</p>          
           </div>
-          <div class="new_about_us_text">
-            
-            <p>Microinvest Warehouse Pro — это программное обеспечение для управления складом. Cлужит для автоматизации управления бизнес-процессами в торговом предприятии (магазине, ресторане, складе и т.д) и в сети объектов.  Microinvest может предоставлять различные продукты и услуги. Ресторанные и барные решения: Microinvest Warehouse Pro Light включает в себя программное обеспечение для управления ресторанами и барами, включая оформление заказов, учет товаров, отслеживание запасов и т.д. Microinvest HOTEL PRO – инструмент, который упростит ведение гостиничного бизнеса и автоматизирует работу всех его подразделений, что в свою очередь позволит контролировать и оценивать деятельность всего отеля в любой период времени. </p>          
+          <div class="microinvest_item">
+            <img src="../img/section-img/res.jpg" class="microinvest_item_img_res" alt="">
+            <p>Microinvest Warehouse Pro Light включает в себя программное обеспечение для управления ресторанами и барами, включая оформление заказов, учет товаров, отслеживание запасов и т.д. Основные возможности: Подходит ко всем типам торговых объектов, магазинов, ресторанов, эргономический дизайн и облегченная работа, минимальные требования к компьютерной технике</p>
+          </div>
+          <div class="microinvest_item">
+            <p>Современный отель — это сложная структура со своими внутренними процессами такими как: бронирование, обслуживание, уборка номеров, платежи, работа SPA, ресторана/бара/лобби и т.д. Microinvest HOTEL PRO – инструмент, который упростит ведение гостиничного бизнеса и автоматизирует работу всех его подразделений, что в свою очередь позволит контролировать и оценивать деятельность всего отеля в любой период времени.</p>
+            <img src="../img/section-img/male-receptionist-in-suit-offering-room-key.jpg" class="microinvest_item_img_reception" alt="">
+          </div>
         </div>
       </div>
     </section>
-    <section class="our_partners">
+    <!-- <section class="our_partners">
       <div class="my-container">
         <h2>С нами сотрудничают</h2>
         <div class="our_partners_img">
           <img src="../img/section-img/microinvest-1.png"  alt="">
           <img src="../img/section-img/microinvest-1.png" alt="">
-          <!-- <img src="../img/section-img/microinvest-1.png" class="microinvest_img" alt=""> -->
         </div>
       </div>
-    </section>
-    <section class="promo_3">
+    </section> -->
+    <!-- <section class="promo_3">
       <div class="my-container row">
         <div class="our_works">
           <h2 class="our_works_subscribe"><a></a>Как влияет на бизнес автоматизация и IT технологии?</h2>
-          <!-- <button class="our_works_button">Все услуги</button> -->
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="promo_4">
       <div class="my-container">
+        <h2 class="our_works_subscribe"><a></a>Как влияет на бизнес автоматизация и IT технологии?</h2>
+        <div class="line"></div>
         <div class="swiper-container">
           <div class="promo_description_items swiper-wrapper">
             <!-- <div class="row row-cols-3 row-cols-sm-1 row-cols-md-2"> -->
@@ -180,66 +199,46 @@
         </div>
       </div>
     </section>
-    <footer>
-      <div class="my-container row">
-        <div class="footer_content">
-          <div class="contacts">
-            <h4>Контактная информация</h4>
-            <div class="contacts_content">
-              <div class="contacts_message">
-                <img src="../img/footer-img/envelope.svg" alt="">
-                <p class="mail">info@jns-tm.tech</p>
-              </div>
-              <div class="contacts_phone">
-                <img src="../img/footer-img/call.svg" alt="">
-                <p class="phone-contact"><a name="contacts" ></a>21-64-06</p>
-              </div>
-              <div class="contacts_adress">
-                <img src="../img/footer-img/placeholder.svg" alt="">
-                <p class="adress">г. Ашхабад ул. Битар Туркменистан шаёлы <br>здание "Shirin nygmatlar"  3-ий этаж</p>
+    
+      <footer>
+        <div class="my-container row">
+          <div class="footer_content">
+            <div id="map" style="width: 600px; height: 400px"></div>
+            <div class="contacts">
+              <h4>Контактная информация</h4>
+              <div class="contacts_content">
+                <div class="contacts_message">
+                  <img src="../img/footer-img/envelope.svg" alt="">
+                  <p class="mail">info@jns-tm.tech</p>
+                </div>
+                <div class="contacts_phone">
+                  <img src="../img/footer-img/call.svg" alt="">
+                  <p class="phone-contact"><a name="contacts" ></a>21-64-06</p>
+                </div>
+                <div class="contacts_adress">
+                  <img src="../img/footer-img/placeholder.svg" alt="">
+                  <p class="adress">г. Ашхабад ул. Битар Туркменистан шаёлы <br>здание "Shirin nygmatlar"  3-ий этаж</p>
+                </div>
               </div>
             </div>
+            <div class="social_softs">
+              <h4>Социальные сети</h4>
+              <ul>
+                <li>
+                  <img src="../img/footer-img/right-arrow.svg" alt="">
+                  <p OnMouseOver="changeText()" OnMouseOut="changeTextAgain()" class="instagram">Instagram</p>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="main_menu">
-            <h4>Основные ссылки</h4>
-            <ul>
-              <li>
-                <img src="../img/footer-img/right-arrow.svg" alt="">
-                <a href="#main">Главная</a>
-              </li>
-              <li>
-                <img src="../img/footer-img/right-arrow.svg" alt="">
-                <a href="#services">Наши услуги</a>
-              </li>
-              <li>
-                <img src="../img/footer-img/right-arrow.svg" alt="">
-                <a  OnMouseOver="changeColor()" OnMouseOut = "changeColorAgain()" style="cursor: pointer;">Контакты</a>
-              </li>
-            </ul>
-          </div>
-          <div class="social_softs">
-            <h4>Социальные сети</h4>
-            <ul>
-              <li>
-                <img src="../img/footer-img/right-arrow.svg" alt="">
-                <p OnMouseOver="changeText()" OnMouseOut="changeTextAgain()" class="instagram">Instagram</p>
-              </li>
-              <!-- <li>
-                <img src="../img/footer-img/right-arrow.svg" alt="">
-                <p>Facebook</p>
-              </li>
-              <li>
-                <img src="../img/footer-img/right-arrow.svg" alt="">
-                <p>Twitter</p>
-              </li> -->
-            </ul>
-          </div>
+          <div class="reserved">(с) 2023. Все права защищены.</div>
         </div>
-        <div class="reserved">(с) 2023. Все права защищены.</div>
-      </div>
-    </footer>
+        
+        </footer>
+      
+  
     <script src="src/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+  
   </body>
 </html>
