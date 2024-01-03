@@ -1013,6 +1013,9 @@ footer .reserved {
   .promo .services {
     margin-top: 28px;
   }
+  .promo .services_item_text {
+    padding-left: 0;
+  }
   .promo .services .col {
     margin-top: 40px;
     max-width: 100%;
@@ -1189,7 +1192,7 @@ footer .reserved {
     font-size: 14px;
   }
   .promo_2 .about_us .audit_block img {
-    width: 340px;
+    width: 260px;
   }
   .new_promo .new_about_us .microinvest_item_main h2 {
     width: 100%;
@@ -1198,7 +1201,7 @@ footer .reserved {
     text-align: center;
   }
   .new_promo .new_about_us .microinvest_item_img_res {
-    width: 340px;
+    width: 260px;
   }
   .new_promo .new_about_us .microinvest_item {
     margin-bottom: 20px;
@@ -1207,6 +1210,6 @@ footer .reserved {
     font-size: 14px;
   }
   .new_promo .new_about_us .microinvest_item_img_reception {
-    width: 340px;
+    width: 260px;
   }
 }/*# sourceMappingURL=style.css.map */
