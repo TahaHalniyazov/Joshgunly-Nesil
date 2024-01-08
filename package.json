@@ -2,5 +2,9 @@
   "dependencies": {
     "bootstrap-icons": "^1.11.1",
     "swiper": "^11.0.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
   }
 }

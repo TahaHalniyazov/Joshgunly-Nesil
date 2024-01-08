@@ -558,6 +558,31 @@ footer .reserved {
   padding: 100px 0 40px 0;
 }
 
+@media (min-width: 1660px) {
+  header .header_bg_img h1 {
+    font-size: 46px;
+    padding: 200px 0 540px 0;
+  }
+  .promo .services h2 {
+    max-width: 100%;
+  }
+  .promo_2 .about_us_text h2 {
+    font-size: 32px;
+  }
+  .promo_2 .about_us_text .audit_button {
+    margin: 42px auto;
+  }
+  .new_promo .new_about_us h2 {
+    font-size: 32px;
+    margin-right: 150px;
+  }
+  .new_promo .new_about_us .microinvest_item_main .service_button {
+    margin: 50px auto;
+  }
+  .promo_4 .swiper-container .promo_description_items .description_item {
+    margin-left: 28px;
+  }
+}
 @media (max-width: 1200px) {
   header h1 {
     width: 75%;
@@ -998,7 +1023,8 @@ footer .reserved {
     text-align: left;
   }
   header .header_items .header-icon img {
-    width: 100%;
+    -webkit-border-radius: 10px;
+    width: 80%;
     height: 60px;
   }
   header h1 {
@@ -1007,7 +1033,7 @@ footer .reserved {
     height: auto;
   }
   header .hamburger {
-    right: 30px;
+    right: 40px;
     top: 60px;
   }
   .promo .services {
@@ -1015,6 +1041,7 @@ footer .reserved {
   }
   .promo .services_item_text {
     padding-left: 0;
+    margin-right: 14px;
   }
   .promo .services .col {
     margin-top: 40px;
@@ -1050,7 +1077,7 @@ footer .reserved {
     margin: 0 auto;
     font-size: 18px;
     margin-top: 0;
-    max-width: 90%;
+    max-width: 100%;
   }
   .promo_2 .about_us .about_us_text .audit_button {
     margin: 0 auto;
@@ -1072,7 +1099,7 @@ footer .reserved {
   }
   .new_promo .new_about_us .microinvest_item_main h2 {
     font-size: 18px;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   .new_promo .new_about_us .microinvest_item_main .service_button {
@@ -1159,7 +1186,7 @@ footer .reserved {
 }
 @media (max-width: 370px) {
   header .header_items .header-icon img {
-    max-width: 70%;
+    width: 80%;
     height: auto;
   }
   header .header_bg_img h1 {
@@ -1169,9 +1196,13 @@ footer .reserved {
     padding: 80px 0 200px 0;
   }
   header .hamburger {
-    top: 50px;
+    top: 46px;
     right: 20px;
-    width: 30px;
+    width: 26px;
+  }
+  .promo .services_item_text {
+    padding-left: 0;
+    margin-right: 4px;
   }
   .promo .services h2 {
     max-width: 100%;
